@@ -1,0 +1,70 @@
+:py:mod:`grapycal.builtin_nodes.procedural.procedureNode`
+=========================================================
+
+.. py:module:: grapycal.builtin_nodes.procedural.procedureNode
+
+
+Module Contents
+---------------
+
+Classes
+~~~~~~~
+
+.. autoapisummary::
+
+   grapycal.builtin_nodes.procedural.procedureNode.ProcedureNode
+
+
+
+
+.. py:class:: ProcedureNode
+
+
+   Bases: :py:obj:`grapycal.sobjects.node.Node`
+
+   .. py:attribute:: category
+      :value: 'procedural'
+
+      
+
+   .. py:method:: build_node()
+
+      Create attributes, ports, and controls here.
+
+      Note: 
+          This method will not be called when the object is being restored. The child objects will be restored automatically instead of
+      running this method again.
+
+
+   .. py:method:: init()
+
+      This method is called after the node is built and its ports and controls are created. Use this method if you want to do something after
+      the node is built.
+
+
+   .. py:method:: add_pressed()
+
+
+   .. py:method:: add_step(step, position)
+
+
+   .. py:method:: remove_step(step, position)
+
+
+   .. py:method:: edge_activated(edge: grapycal.Edge, port: grapycal.InputPort)
+
+      Called when an edge on an input port is activated.
+
+
+   .. py:method:: input_edge_added(edge: grapycal.Edge, port: grapycal.InputPort)
+
+      Called when an edge is added to an input port.
+
+
+   .. py:method:: task()
+
+
+   .. py:method:: next()
+
+
+

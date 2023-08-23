@@ -1,0 +1,45 @@
+:py:mod:`grapycal.builtin_nodes.procedural.eventNode`
+=====================================================
+
+.. py:module:: grapycal.builtin_nodes.procedural.eventNode
+
+
+Module Contents
+---------------
+
+Classes
+~~~~~~~
+
+.. autoapisummary::
+
+   grapycal.builtin_nodes.procedural.eventNode.EventNode
+
+
+
+
+.. py:class:: EventNode
+
+
+   Bases: :py:obj:`grapycal.sobjects.node.Node`
+
+   .. py:attribute:: category
+      :value: 'procedural'
+
+      
+
+   .. py:method:: build_node()
+
+      Create attributes, ports, and controls here.
+
+      Note: 
+          This method will not be called when the object is being restored. The child objects will be restored automatically instead of
+      running this method again.
+
+
+   .. py:method:: init()
+
+      This method is called after the node is built and its ports and controls are created. Use this method if you want to do something after
+      the node is built.
+
+
+

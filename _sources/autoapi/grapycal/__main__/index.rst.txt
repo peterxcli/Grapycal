@@ -1,0 +1,36 @@
+:py:mod:`grapycal.__main__`
+===========================
+
+.. py:module:: grapycal.__main__
+
+
+Module Contents
+---------------
+
+
+Functions
+~~~~~~~~~
+
+.. autoapisummary::
+
+   grapycal.__main__.main
+
+
+
+Attributes
+~~~~~~~~~~
+
+.. autoapisummary::
+
+   grapycal.__main__.parser
+
+
+.. py:function:: main()
+
+   Entry function of backend server
+
+
+.. py:data:: parser
+
+   
+

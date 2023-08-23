@@ -1,0 +1,42 @@
+:py:mod:`grapycal.sobjects.editor`
+==================================
+
+.. py:module:: grapycal.sobjects.editor
+
+
+Module Contents
+---------------
+
+Classes
+~~~~~~~
+
+.. autoapisummary::
+
+   grapycal.sobjects.editor.Editor
+
+
+
+
+.. py:class:: Editor
+
+
+   Bases: :py:obj:`objectsync.SObject`
+
+   .. py:attribute:: frontend_type
+      :value: 'Editor'
+
+      
+
+   .. py:method:: init()
+
+
+   .. py:method:: create_node(node_type: type, **kwargs) -> grapycal.sobjects.node.Node
+
+
+   .. py:method:: create_edge(tail: grapycal.sobjects.port.OutputPort, head: grapycal.sobjects.port.InputPort) -> grapycal.sobjects.edge.Edge
+
+
+   .. py:method:: create_edge_service(tail_id: str, head_id: str)
+
+
+

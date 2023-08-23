@@ -1,0 +1,58 @@
+:py:mod:`grapycal.builtin_nodes.interaction.evalNode`
+=====================================================
+
+.. py:module:: grapycal.builtin_nodes.interaction.evalNode
+
+
+Module Contents
+---------------
+
+Classes
+~~~~~~~
+
+.. autoapisummary::
+
+   grapycal.builtin_nodes.interaction.evalNode.EvalNode
+
+
+
+
+.. py:class:: EvalNode
+
+
+   Bases: :py:obj:`grapycal.sobjects.node.Node`
+
+   .. py:attribute:: category
+      :value: 'interaction'
+
+      
+
+   .. py:method:: build_node()
+
+      Create attributes, ports, and controls here.
+
+      Note: 
+          This method will not be called when the object is being restored. The child objects will be restored automatically instead of
+      running this method again.
+
+
+   .. py:method:: init()
+
+      This method is called after the node is built and its ports and controls are created. Use this method if you want to do something after
+      the node is built.
+
+
+   .. py:method:: task()
+
+
+   .. py:method:: double_click()
+
+      Called when the node is double clicked by an user.
+
+
+   .. py:method:: output_edge_added(edge: grapycal.sobjects.edge.Edge, port: grapycal.sobjects.port.OutputPort)
+
+      Called when an edge is added to an output port.
+
+
+
